@@ -1,4 +1,4 @@
-version: '3.7'
+version: '3'
 
 services:
   crafty:
@@ -13,8 +13,8 @@ services:
         - "19132:19132/udp" # BEDROCK
         - "25500-25600:25500-25600" # MC SERV PORT RANGE
     volumes:
-        - ${APP_DATA_DIR}/data/backups:/crafty/backups
-        - ${APP_DATA_DIR}/data/logs:/crafty/logs
-        - ${APP_DATA_DIR}/data/servers:/crafty/servers
-        - ${APP_DATA_DIR}/data/config:/crafty/app/config
-        - ${APP_DATA_DIR}/data/import:/crafty/import
+        - ./docker/backups:/crafty/backups
+        - ./docker/logs:/crafty/logs
+        - ./docker/servers:/crafty/servers
+        - ./docker/config:/crafty/app/config
+        - ./docker/import:/crafty/import
