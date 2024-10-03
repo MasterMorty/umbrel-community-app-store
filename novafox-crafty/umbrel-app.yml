@@ -26,4 +26,4 @@ releaseNotes: >
 dependencies: []
 path: ""
 defaultUsername: "admin"
-defaultPassword: "crafty-novafox"
+defaultPassword: "novafox"
